@@ -1,4 +1,4 @@
-<html lang="uk2">
+<html lang="en">
 <head>
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script type="text/javascript">
@@ -6,34 +6,33 @@
         google.charts.setOnLoadCallback(drawChart);
         function drawChart() {
             var data = google.visualization.arrayToDataTable(
-                [['фрази'],
-                ['приміщеня для лекцій по програмуванню'],
-                ['приміщеня для лекцій по дискретній математиці'],
-                ['приміщеня для лекцій по ІСППР'],
-                ['приміщеня для лекцій по Патентознавству та авторському праву'],
-                ['приміщеня для практичних з програмування'],
-                ['приміщеня для практичних з схемотехник'],
-                ['приміщеня для практичних з ІСППР'],
-                ['приміщеня для практичних з дискретної математики'],
-                ['приміщеня для практичних з ООП'],
-                ['приміщеня для адміністративних задач це деканат'],
-                ['приміщеня для адміністративних задач це лаборантська'],
-                ['приміщеня для адміністративних задач це кафедра'],
-                ['приміщеня для адміністративних задач це кафедра де студент може оформити індивілуальний план'],
-                ['приміщеня для адміністративних задач це кафедра де студент може дізнатися свої борги'],
-                ['приміщеня для адміністративних задач це деканат де студент може взяти заліковку'],
-                ['приміщеня для адміністративних задач це деканат де студент може дізнатися розклад'],
-                ['приміщеня для адміністративних задач це деканат де студент може зустрітися з деканом'],
-                ['приміщеня для адміністративних задач це лаборантська де студент може зустрітися з лаборантом'],
-                ['приміщеня для адміністративних задач це лаборантська де студент може взяти необхідні пристрої для практиних'],
+                [['Phrases'],
+                    ['Room for programming lectures'],
+                    ['Room for discrete mathematics lectures'],
+                    ['Room for ISP lectures'],
+                    ['Room for Patent Law and Copyright lectures'],
+                    ['Room for programming practice'],
+                    ['Room for circuit design practice'],
+                    ['Room for ISP practice'],
+                    ['Room for discrete mathematics practice'],
+                    ['Room for OOP practice'],
+                    ['Room for administrative tasks, that is the deans office'],
+                    ['Room for administrative tasks, that is the laboratory'],
+                    ['Room for administrative tasks, that is the department'],
+                    ['Room for administrative tasks, that is the department where a student can create an individual plan'],
+                    ['Room for administrative tasks, that is the department where a student can inquire about their debts'],
+                    ['Room for administrative tasks, that is the deans office where a student can get a transcript'],
+                    ['Room for administrative tasks, that is the deans office where a student can check the schedule'],
+                    ['Room for administrative tasks, that is the deans office where a student can meet with the dean'],
+                    ['Room for administrative tasks, that is the laboratory where a student can meet with the lab assistant'],
+                    ['Room for administrative tasks, that is the laboratory where a student can borrow necessary devices for practical work']
                 ]
             );
             var options = {
                 wordtree: {
                     format: 'implicit',
-                    word: 'приміщеня',
-                    fontName: 'Times-Roman',
-                    colors: ['red', 'black', 'green']
+                    word: 'Room',
+                    fontName: 'Times-Roman'
                 }
             };
             var chart = new google.visualization.WordTree(document.getElementById('wordtree_basic'));
